@@ -14,9 +14,9 @@ console.log(selector)
 */
 let numbers = [12,53,67,32,13,73,43,3,100]
 
-let max = numbers.reduce((value, max) =>
-    (value > max) ? value : max 
-, 0)
+let max = numbers.reduce((initValue, number) =>
+    // ( {0}: initValue(accumulator), {1}: ArrayElement, {3}: index, {4}: Array ) 
+    (initValue > number) ? initValue : number , 0)
 
 console.log(max)
 
